@@ -1,0 +1,279 @@
+:root {
+    --aside-white: white;
+    --heading-color: rgb(29, 29, 29);
+    --text-color: rgb(45, 55, 72);
+    --form-link-color: rgba(0, 122, 255, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    /*    Font Family: Poppins*/
+}
+
+aside, main {
+    padding-top: 5.2vh;
+}
+
+aside {
+    background: linear-gradient(324.93deg, #007AFF 0.74%, #0F70DA 100%);
+    color: var(--aside-white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 45.9%;
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    height: 100%;
+}
+
+aside p {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    width: 64.4%;
+}
+
+.aside__div {
+    padding-top: 7.37vh;
+    height: 68.3vh;
+    /*background: red;*/
+}
+
+.ellipse {
+    background: linear-gradient(324.93deg, #0F70DA 0.74%, #007AFF 100%);
+    width: 64.3vh;
+    height: 64.3vh;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.one-image {
+    position: relative;
+    /*width: 44.1%;*/
+}
+
+#image-1, #image-2 {
+    /*width: 212.81px;*/
+    height: 52.47vh;
+}
+
+#image-3 {
+    /*width: 277.18px;*/
+    height: 68.22vh;
+
+}
+
+.slider-dots {
+    padding-top: 3.28vh;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.ellipse-small {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--aside-white);
+    border-radius: 50%;
+}
+
+main {
+    padding-left: 5.2vw;
+}
+
+.logo, .heading h1 {
+    color: var(--heading-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 3.06vw;
+    height: 6.25vh;
+}
+
+.logo p {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.35rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.heading {
+    margin-top: 4.8vh;
+    gap: 8px;
+    display: grid;
+    width: 15.15vw;
+}
+
+.heading h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+    letter-spacing: -0.02em;
+}
+
+.heading p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.225rem;
+    letter-spacing: -0.02em;
+    color: var(--text-color);
+}
+
+form, .login-link {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.225rem;
+    letter-spacing: -0.02em;
+    color: var(--text-color);
+}
+
+form {
+    margin-top: 4.81vh;
+    width: 41.87vw;
+    /*height: 51.56vh;*/
+    display: grid;
+    gap: 2.08vh;
+}
+
+form label {
+    display: grid;
+    gap: 4px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control input {
+    --padding: 10px;
+
+    display: block;
+    width: calc(19.765vw - var(--padding) - var(--padding));
+
+    padding: var(--padding);
+    border-radius: 5px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.form-control a {
+    color: var(--form-link-color);
+    text-decoration: none;
+}
+.checkbox-div {
+    display: grid;
+    gap: 2.08vh;
+}
+.checkbox {
+    display: flex;
+}
+.checkbox input {
+    width: auto;
+    display: initial;
+}
+a.forgot-password {
+    text-decoration: underline;
+}
+
+.form-control button {
+    width: calc(19.765vw);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    background: var(--form-link-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: var(--aside-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.google-button {
+    background: var(--text-color);
+    gap: 0.75rem;
+}
+
+.google-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.login-link {
+    margin-top: 3.125vh;
+    text-align: center;
+}
+.login-link a {
+    text-decoration: none;
+}
+
+.app-store-div {
+    margin-top: 5.21vh;
+    height: 5.2vh;
+    display: flex;
+    gap: 12px;
+}
+
+.app-store-div a {
+    background: inherit;
+    border: none;
+}
+
+.app-store-div img {
+    height: 100%;
+
+}
+
+/* Custom Checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.1rem;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 2px;
+    height: 20px;
+    width: 20px;
+}
+input[type="checkbox"]:checked  {
+    background: var(--form-link-color);
+}
+input[type="checkbox"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 95% 13%, 80% 0%, 38% 59%);
+    transform: scale(0);
+    background-color: white;
+    position: relative;
+    top: 2px;
+}
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+input[type="checkbox"]:hover {
+    color: black;
+}

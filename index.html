@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="/vite.svg" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Vite App</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<aside>
+    <p>Social media shared today, tomorrow or by location</p>
+    <div class="aside__div">
+        <div class="ellipse"></div>
+        <!--        <img src="/Default Picture.png" alt="" id="image-1" class="one-image"/>-->
+        <!--        <img src="/Default Picture.png" alt="" id="image-2" class="one-image"/>-->
+        <!--        <img src="/Default Picture.png" alt="" id="image-3" class="one-image"/>-->
+    </div>
+    <!--    Slider Dots-->
+    <div class="slider-dots">
+        <div class="ellipse-small"></div>
+        <svg fill="none" height="22" viewBox="0 0 16 22" width="16" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5" cy="11" fill="white" r="4.5" stroke="white"/>
+            <path d="M5 21C10.5228 21 15 16.5228 15 11C15 5.47715 10.5228 1 5 1" stroke="white"/>
+        </svg>
+        <div class="ellipse-small"></div>
+    </div>
+</aside>
+<main>
+    <div class="logo">
+        <!-- TODO: Adjust Image Later-->
+        <img alt="Logo" src="/logo.png">
+        <p>Capzul</p>
+    </div>
+    <div class="heading">
+        <h1>Create account</h1>
+        <p>For business, band or celebrity.</p>
+    </div>
+    <form>
+        <div class="form-control">
+            <label>
+                First name
+                <input>
+            </label>
+            <label>
+                Last name
+                <input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                Email or phone number
+                <input>
+            </label>
+            <label>
+                Date of birth (MM/DD/YY)
+                <input type="date" value="">
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                Password
+                <input>
+            </label>
+            <label>
+                Confirm Password
+                <input>
+            </label>
+        </div>
+        <div class="form-control">
+            <div class="checkbox-div">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Remember me
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    I agree to all the <a href="#">Terms</a> and <a href="#">Privacy Policy </a>
+                </label>
+            </div>
+            <a class="forgot-password" href="#">Forgot Password?</a>
+        </div>
+        <div class="form-control">
+            <button type="button"> Create account</button>
+            <button class="google-button" type="submit"><img alt="Google Logo" src="/google-logo.png"> Sign-in with
+                google
+            </button>
+        </div>
+    </form>
+        <p class="login-link">Don't have an account? <a href="#">Log In </a></p>
+    <div class="app-store-div">
+        <a href="#">
+            <img alt="Google Play Image" src="/Google%20Play%20Badge.png"/>
+        </a>
+        <a href="#">
+            <img alt="Apple Store Image" src="/App%20Store%20Badge.png"/>
+        </a>
+    </div>
+</main>
+</body>
+</html>
