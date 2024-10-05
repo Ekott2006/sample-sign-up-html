@@ -57,23 +57,12 @@ aside p {
     margin: 0 auto;
     position: relative;
 }
-
-.one-image {
-    position: relative;
-    /*width: 44.1%;*/
+.aside__div img {
+    width: 26.79vw;
+    position: absolute;
+    top: 20.57vh;
+    left: 9vw;
 }
-
-#image-1, #image-2 {
-    /*width: 212.81px;*/
-    height: 52.47vh;
-}
-
-#image-3 {
-    /*width: 277.18px;*/
-    height: 68.22vh;
-
-}
-
 .slider-dots {
     padding-top: 3.28vh;
     display: flex;
@@ -172,6 +161,10 @@ form label {
     padding: var(--padding);
     border-radius: 5px;
     border: 1px solid rgb(230, 230, 230);
+}
+.form-control input:focus-visible, .form-control input:focus-within {
+    outline: none;
+    border: 1px solid var(--form-link-color);
 }
 
 .form-control a {
